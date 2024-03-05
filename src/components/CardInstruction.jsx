@@ -2,23 +2,29 @@ import { cardInstructions } from "../const/cardInstructions";
 
 export function CardInstruction() {
     return (
-        <section className="flex flex-col gap-6">
+        <>
             <div>
-            <h2 className="font-bold text-xl">How to play?</h2>
-            <p className="font-regular text-sm">Cards function as dice to move the tiles. There are three groups with different difficulties</p>
+                <h2 className="font-bold text-xl text-blue-200 md:text-3xl">HOW TO PLAY?</h2>
+                <p className="font-regular text-sm text-white md:text-lg">Cards function as dice to move the tiles. There are three groups with different difficulties</p>
             </div>
-            {
-                cardInstructions.map(({ id, difficulty, content }) => {
-                    return <article className="flex gap-2 w-full justify-start" key={id}>
-                        <div className="w-1/2 bg-gray-500"></div>
-                        <div className="">
-                            <h4>{difficulty}</h4>
-                            <p className="font-regular text-sm">{content}</p>
-                        </div>
-                    </article>
+            <section className="flex flex-col gap-6 lg:flex-row">
+                {
+                    cardInstructions.map(({ id, difficulty, content, color, image }) => {
+                        return <article className="flex gap-1 w-full justify-start items-center" key={id}>
+                            <img
+                                src={image}
+                                alt={`${difficulty} card image`}
+                                className="w-24" />
+                            <div className="">
+                                <h4 className={`${color} md:text-lg`}>{difficulty}</h4>
+                                <p className="font-regular text-sm text-white md:text-lg">{content}</p>
+                            </div>
+                        </article>
 
-                })
-            }
-        </section>
+                    })
+                }
+            </section>
+        </>
+
     )
 }

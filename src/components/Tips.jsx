@@ -2,17 +2,19 @@ import { tips } from "../const/tips";
 
 export function Tips() {
     return (
-        <section className="flex flex-col gap-6">
-            <h2 className="font-bold text-xl">Tips & Tricks</h2>
-            {
-                tips.map(({ id, content }) => {
-                    return <article className="flex gap-2 w-full justify-start" key={id}>
-                        <div className="w-1/2 bg-gray-500"></div>
-                        <p className="font-regular text-sm">{content}</p>
-                    </article>
-                })
-            }
+        <>
+            <h2 className="font-bold text-xl text-blue-200 md:text-3xl">TIPS & TRICKS</h2>
+            <section className="flex flex-col gap-6 lg:flex-row">
+                {
+                    tips.map(({ id, content, image }) => {
+                        return <article className="flex gap-2 w-full justify-start items-center" key={id}>
+                            <img src={image} />
+                            <p className="font-regular text-sm text-white md:text-lg">{content}</p>
+                        </article>
+                    })
+                }
 
-        </section>
+            </section>
+        </>
     )
 }
