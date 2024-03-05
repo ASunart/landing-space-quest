@@ -6,4 +6,5 @@
 *{
     background-color: #040A22;
     font-family: "Alumni Sans", sans-serif;
+    scroll-behavior: smooth;
 }

@@ -3,7 +3,7 @@ import { cardInstructions } from "../const/cardInstructions";
 export function CardInstruction() {
     return (
         <>
-            <div>
+            <div id="1">
                 <h2 className="font-bold text-xl text-blue-200 md:text-3xl">HOW TO PLAY?</h2>
                 <p className="font-regular text-sm text-white md:text-lg">Cards function as dice to move the tiles. There are three groups with different difficulties</p>
             </div>

@@ -20,7 +20,7 @@ function App() {
         </section>
         <section className="flex flex-col items-center gap-4 my-6">
           <h2 className="text-xl font-bold text-center w-3/4 mx-auto text-white md:text-4xl">Start your adventure in Space Quest and discover a world of learning and fun!</h2>
-          <button className=" bg-pink px-2 py-1 w-1/2 rounded-lg md:text-lg md:w-1/3">Play now</button>
+          <button className=" bg-pink px-2 py-1 w-1/2 rounded-lg md:text-lg md:w-1/3 hover:bg-blue-200">Play now</button>
         </section>
       </main>
       <Footer />

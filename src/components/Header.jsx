@@ -22,11 +22,12 @@ export function Header() {
                 <img src={menuImg} alt="Hamburger menu" onClick={handleMobileMenu} className="inline md:hidden" />
                 <ul className={mobileMenu}>
                     {
-                        navOptions.map(({id, label}) => {
-                            return <li 
-                            key={id} 
-                            className="text-white cursor-pointer text-2xl hover:text-pink"
-                            >{label}</li>
+                        navOptions.map(({ id, label }) => {
+                            return <a href={`#${id}`} key={id} >
+                                <li
+                                    className="text-white cursor-pointer text-2xl hover:text-pink"
+                                >{label}</li>
+                            </a>
                         })
                     }
                 </ul>
