@@ -7,7 +7,8 @@ export const cardType = [
         color: 'text-green-100',
         image: '/earth.webp',
         flexType: '',
-        position: '-left-16'
+        position: '-left-16',
+        dtPosition: '-left-44'
     },
 
     {
@@ -18,7 +19,8 @@ export const cardType = [
         color: 'text-blue-100',
         image: '/saturno.webp',
         flexType: 'flex-row-reverse',
-        position: '-right-16'
+        position: '-right-16',
+        dtPosition: '-right-44'
     },
 
     {
@@ -29,7 +31,8 @@ export const cardType = [
         color: 'text-magenta',
         image: '/pink-planet.webp',
         flexType: '',
-        position: '-left-16'
+        position: '-left-16',
+        dtPosition: '-left-44'
     },
 
 ]
