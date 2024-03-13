@@ -21,8 +21,8 @@ function App() {
             <p className="lg:text-2xl lg:w-1/3">SPACE QUEST combina la diversión de un juego de mesa tradicional con la interactividad de la tecnología digital.</p>
           </div>
           <div className="flex gap-4 w-full">
-            <a className={mainBtn}>Jugar ahora</a>
-            <a className={btnStyle}>Ver video</a>
+            <a className={mainBtn} href="https://spacequest.vercel.app/" target="_blank">Jugar ahora</a>
+            <a className={btnStyle} href="#" target="_blank">Ver video</a>
           </div>
 
         </section>
