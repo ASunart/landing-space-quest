@@ -1,29 +1,74 @@
-import { Banner } from "./components/Banner"
-import { CardInstruction } from "./components/CardInstruction"
-import { Footer } from "./components/Footer"
-import { Header } from "./components/Header"
-import { SquareTypes } from "./components/SquareTypes"
-import { Tips } from "./components/Tips"
-
 function App() {
 
   return (
     <>
-      <Header />
-      <main className="flex flex-col gap-12 px-3 my-4 md:px-12">
-        <Banner />
-        <hr className="hidden lg:inline lg:my-8 lg:text-blue-200 lg:opacity-50"/>
-        <section className="flex flex-col gap-8">
-          <CardInstruction />
-          <SquareTypes />
-          <Tips />
+      <header className="relative flex flex-col items-center">
+        <img
+          src="/smoke-vector.svg"
+          alt="Smoke of Rocket"
+        />
+        <img
+          src="/logo_space.svg"
+          alt="Space Quest Logo"
+          className="absolute top-24"
+        />
+      </header>
+      <main className="relative">
+
+        <section className="text-white">
+          <h1>JUGAR, COMPETIR Y COOPERAR</h1>
+          <p>SPACE QUEST combina la diversión de un juego de mesa tradicional con la interactividad de la tecnología digital.</p>
+          <div>
+            <button>Jugar ahora</button>
+            <button>Ver video</button>
+          </div>
         </section>
-        <section className="flex flex-col items-center gap-4 my-6">
-          <h2 className="text-xl font-bold text-center w-3/4 mx-auto text-white md:text-4xl">Start your adventure in Space Quest and discover a world of learning and fun!</h2>
-          <button className=" bg-pink px-2 py-1 w-1/2 rounded-lg md:text-lg md:w-1/3 hover:bg-blue-200">Play now</button>
+        <section>
+          <h2>¿CÓMO JUGAR?</h2>
+          <p>SPACE QUEST combina la diversión de un juego de mesa tradicional con la interactividad de la tecnología digital.</p>
         </section>
+
+        <section>
+          <article>
+            <img src="/earth.webp" alt="Earth Image" />
+            <div>
+              <span>
+                <h3>TIERRA</h3>
+                <p>PRINCIPIANTE</p>
+              </span>
+              <p>¡Prepárate para poner a prueba tus conocimientos!. Si tu respuesta es acertada, avanza con valentía dos casillas hacia las fronteras del espacio. Sin embargo, si cometes un error, te quedarás en tu posición actual.</p>
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <h2>TIPOS DE CASILLAS</h2>
+          <p>A lo largo del tablero encontrarás diferentes cuadrados con QR que activan diferentes eventos:</p>
+          <article>
+            <h3>TODOS JUEGAN</h3>
+            <p>Todos los jugadores deben completar un desafío o pregunta. Si ganan, todos son recompensados; si pierden, todos sufren las consecuencias.</p>
+          </article>
+        </section>
+
+        <section>
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <h3>¡Comienza tu aventura en Space Quest y descubre un mundo de aprendizaje y diversión!</h3>
+        </section>
+
+        <section>
+          <h2>CONSEJOS Y TRUCOS</h2>
+          <article>
+            <img src="" alt="" />
+            <p>Forma alianzas estratégicas con otros jugadores para avanzar juntos.</p>
+          </article>
+        </section>
+
+        <footer>
+          Footer
+        </footer>
+
       </main>
-      <Footer />
     </>
   )
 }
