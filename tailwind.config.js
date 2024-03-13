@@ -9,17 +9,18 @@ export default {
     colors: {
       "pink": '#D197B1',
       "blue": {
-        100: '#75EBF4',
-        200: '#90AFFF'
+        100: '#768AEE',
+        200: '#A3E9FB'
       },
-      "red": '#CF2424',
-      "yellow": '#FBD300',
+      "red": '#CB0F0F',
+      "yellow": '#FBD404',
       "green": {
         100: '#00BE16',
         200: '#45831E'
       },
       "white": '#FFFFFF',
-      "magenta": '#EC28B6'
+      "magenta": '#EC28B6',
+      "cream": "#FFE0B3"
     }
   },
   plugins: [],

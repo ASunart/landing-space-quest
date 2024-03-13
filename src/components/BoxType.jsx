@@ -1,9 +1,21 @@
+import { boxType } from "../const/boxType"
+
 export function BoxType() {
-    const h1Style = "text-[#698EBF] text-2xl font-regular"
+    
     return (
-        <article className="relative bg-[rgba(255,255,255,0.1)] p-6 border border-red rounded-lg">
-            <h3 className={h1Style}>TODOS JUEGAN</h3>
-            <p>Todos los jugadores deben completar un desafío o pregunta. Si ganan, todos son recompensados; si pierden, todos sufren las consecuencias.</p>
-        </article>
+        <>
+
+            {
+                boxType.map(({ id, title, content, textColor, vector, borderColor }) => {
+                    const h1Style = `${textColor} text-2xl font-regular`
+                    return <article key={id} className={`relative bg-[rgba(255,255,255,0.1)] p-6 border ${borderColor} rounded-lg`}>
+                        <img src={vector} className="absolute w-10 -top-4 -left-4" />
+                        <h3 className={h1Style}>{title}</h3>
+                        <p>{content}</p>
+                    </article>
+                })
+            }
+
+        </>
     )
 }

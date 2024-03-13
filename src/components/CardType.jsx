@@ -6,7 +6,7 @@ export function CardType() {
         <>
             {
                 cardType.map(({id, planet, type, content, color, image, flexType, position}) => {
-                    return <article key={id} className={`text-white flex ${flexType} items-center relative ${position}`}>
+                    return <article key={id} className={`text-white flex ${flexType} items-center relative font-regular ${position}`}>
                         <img
                             src={image}
                             alt={planet}

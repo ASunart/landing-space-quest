@@ -42,9 +42,11 @@ function App() {
         </section>
 
 
-        <section className="text-white px-6">
-          <h2 className={h1Style}>TIPOS DE CASILLAS</h2>
-          <p>A lo largo del tablero encontrarás diferentes cuadrados con QR que activan diferentes eventos:</p>
+        <section className="text-white px-6 flex flex-col gap-12">
+          <div>
+            <h2 className="text-cream text-2xl font-regular">TIPOS DE CASILLAS</h2>
+            <p>A lo largo del tablero encontrarás diferentes cuadrados con QR que activan diferentes eventos:</p>
+          </div>
 
           <BoxType />
         </section>
@@ -55,8 +57,8 @@ function App() {
           <h3>¡Comienza tu aventura en Space Quest y descubre un mundo de aprendizaje y diversión!</h3>
         </section>
 
-        <section className="text-white px-6">
-          <h2 className={h1Style}>CONSEJOS Y TRUCOS</h2>
+        <section className="text-white px-6 flex flex-col gap-8">
+          <h2 className="text-blue-200 text-2xl font-regular">CONSEJOS Y TRUCOS</h2>
           <TipCard />
         </section>
 
