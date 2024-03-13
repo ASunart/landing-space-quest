@@ -1,71 +1,67 @@
+import { BoxType } from "./components/BoxType"
+import { CardType } from "./components/CardType"
+import { Header } from "./components/Header"
+import { TipCard } from "./components/TipCard"
+
 function App() {
 
+  const btnStyle = "px-8 py-2 bg-[rgba(255,255,255,0.1)] rounded-lg border border-[rgba(255,255,255,0.1)]"
+
+  const h1Style = "text-[#698EBF] text-2xl font-regular"
   return (
     <>
-      <header className="relative flex flex-col items-center">
-        <img
-          src="/smoke-vector.svg"
-          alt="Smoke of Rocket"
-        />
-        <img
-          src="/logo_space.svg"
-          alt="Space Quest Logo"
-          className="absolute top-24"
-        />
-      </header>
-      <main className="relative">
+      <Header />
+      <main className="relative mt-32 flex flex-col gap-16">
 
-        <section className="text-white">
-          <h1>JUGAR, COMPETIR Y COOPERAR</h1>
-          <p>SPACE QUEST combina la diversión de un juego de mesa tradicional con la interactividad de la tecnología digital.</p>
+        <section className="text-white flex flex-col gap-4 px-6">
           <div>
-            <button>Jugar ahora</button>
-            <button>Ver video</button>
+            <h1 className={h1Style}>JUGAR, COMPETIR Y COOPERAR</h1>
+            <p className="">SPACE QUEST combina la diversión de un juego de mesa tradicional con la interactividad de la tecnología digital.</p>
           </div>
+          <div className="flex gap-4">
+            <button className={btnStyle}>Jugar ahora</button>
+            <button className={btnStyle}>Ver video</button>
+          </div>
+
         </section>
-        <section>
-          <h2>¿CÓMO JUGAR?</h2>
-          <p>SPACE QUEST combina la diversión de un juego de mesa tradicional con la interactividad de la tecnología digital.</p>
+        <section className="text-white px-6">
+          <div className="flex">
+            <span>
+              <h2 className={h1Style}>¿CÓMO JUGAR?</h2>
+              <p>SPACE QUEST combina la diversión de un juego de mesa tradicional con la interactividad de la tecnología digital.</p>
+            </span>
+            <img
+              src="/cards.webp"
+              alt="Game Cards"
+              className="relative w-36 -right-6" />
+          </div>
+
+          <section className="mt-6 flex flex-col gap-16">
+            <CardType />
+          </section>
         </section>
 
-        <section>
-          <article>
-            <img src="/earth.webp" alt="Earth Image" />
-            <div>
-              <span>
-                <h3>TIERRA</h3>
-                <p>PRINCIPIANTE</p>
-              </span>
-              <p>¡Prepárate para poner a prueba tus conocimientos!. Si tu respuesta es acertada, avanza con valentía dos casillas hacia las fronteras del espacio. Sin embargo, si cometes un error, te quedarás en tu posición actual.</p>
-            </div>
-          </article>
-        </section>
 
-        <section>
-          <h2>TIPOS DE CASILLAS</h2>
+        <section className="text-white px-6">
+          <h2 className={h1Style}>TIPOS DE CASILLAS</h2>
           <p>A lo largo del tablero encontrarás diferentes cuadrados con QR que activan diferentes eventos:</p>
-          <article>
-            <h3>TODOS JUEGAN</h3>
-            <p>Todos los jugadores deben completar un desafío o pregunta. Si ganan, todos son recompensados; si pierden, todos sufren las consecuencias.</p>
-          </article>
+
+          <BoxType />
         </section>
 
         <section>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <h3>¡Comienza tu aventura en Space Quest y descubre un mundo de aprendizaje y diversión!</h3>
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <h3>¡Comienza tu aventura en Space Quest y descubre un mundo de aprendizaje y diversión!</h3>
         </section>
 
-        <section>
-          <h2>CONSEJOS Y TRUCOS</h2>
-          <article>
-            <img src="" alt="" />
-            <p>Forma alianzas estratégicas con otros jugadores para avanzar juntos.</p>
-          </article>
+        <section className="text-white px-6">
+          <h2 className={h1Style}>CONSEJOS Y TRUCOS</h2>
+          <TipCard />
         </section>
 
         <footer>
-          Footer
+          <img src="/footer.webp" alt="Rocket with smoke" />
         </footer>
 
       </main>

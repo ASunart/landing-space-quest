@@ -15,11 +15,11 @@ export default {
       "red": '#CF2424',
       "yellow": '#FBD300',
       "green": {
-        100: '#83DF8E',
-        200: '#67AB3E'
+        100: '#00BE16',
+        200: '#45831E'
       },
       "white": '#FFFFFF',
-      "magenta": '#F140CA'
+      "magenta": '#EC28B6'
     }
   },
   plugins: [],
