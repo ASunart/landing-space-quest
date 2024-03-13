@@ -58,8 +58,8 @@ function App() {
           <h3>¡Comienza tu aventura en Space Quest y descubre un mundo de aprendizaje y diversión!</h3>
         </section>
 
-        <section className="text-white px-6 flex flex-col gap-8">
-          <h2 className="text-blue-200 text-2xl font-regular">CONSEJOS Y TRUCOS</h2>
+        <section className="text-white px-6 flex flex-col gap-8 lg:gap-16 lg:px-20">
+          <h2 className="text-blue-200 text-2xl font-regular lg:text-5xl">CONSEJOS Y TRUCOS</h2>
           <TipCard />
         </section>
 
