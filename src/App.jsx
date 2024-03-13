@@ -1,5 +1,6 @@
 import { BoxType } from "./components/BoxType"
 import { CardType } from "./components/CardType"
+import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
 import { TipCard } from "./components/TipCard"
 
@@ -62,9 +63,7 @@ function App() {
           <TipCard />
         </section>
 
-        <footer>
-          <img src="/footer.webp" alt="Rocket with smoke" />
-        </footer>
+        <Footer />
 
       </main>
     </>
