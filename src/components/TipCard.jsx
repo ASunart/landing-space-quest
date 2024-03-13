@@ -11,7 +11,7 @@ export function TipCard() {
                         src={planet}
                         className="absolute w-20 -left-8 rotate-45 lg:w-40 lg:-left-16"
                          />
-                        <p className="ml-6 lg:ml-20 lg:text-xl">{content}</p>
+                        <p className="ml-6 lg:ml-20 lg:text-2xl">{content}</p>
                     </article>
                 })
             }

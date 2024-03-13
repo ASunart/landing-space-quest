@@ -10,4 +10,7 @@
 
 body {
     background-color: #040A22;
+    background-image: url('/bg-landing.webp');
+    background-size: cover;
+    
 }
