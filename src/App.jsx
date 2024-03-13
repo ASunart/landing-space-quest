@@ -43,10 +43,10 @@ function App() {
         </section>
 
 
-        <section className="text-white px-6 flex flex-col gap-12">
+        <section className="text-white px-6 flex flex-col gap-12 lg:px-20">
           <div>
-            <h2 className="text-cream text-2xl font-regular">TIPOS DE CASILLAS</h2>
-            <p>A lo largo del tablero encontrarás diferentes cuadrados con QR que activan diferentes eventos:</p>
+            <h2 className="text-cream text-2xl font-regular lg:text-5xl">TIPOS DE CASILLAS</h2>
+            <pm className="lg:text-xl">A lo largo del tablero encontrarás diferentes cuadrados con QR que activan diferentes eventos:</pm>
           </div>
 
           <BoxType />
