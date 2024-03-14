@@ -61,7 +61,7 @@ function App() {
               className="w-80 rounded-lg lg:w-2/5 object-cover"
               loading="lazy" />
             <img 
-            src="/bento-image.webp" 
+            src="/pruebas-2.webp" 
             alt="" 
             className="w-80 rounded-lg lg:w-2/5"
             loading="lazy" />
