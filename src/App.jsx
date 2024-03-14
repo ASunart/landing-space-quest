@@ -30,7 +30,7 @@ function App() {
           <div className="flex w-full items-center justify-between">
             <span>
               <h2 className={h1Style}>¿CÓMO JUGAR?</h2>
-              <p className="lg:text-2xl lg:w-3/4">SPACE QUEST combina la diversión de un juego de mesa tradicional con la interactividad de la tecnología digital.</p>
+              <p className="lg:text-2xl lg:w-3/4">Olvídate de los dados tradicionales. Ingresa a la web del juego y utiliza las cartas de preguntas para avanzar en las fronteras del espacio, aquí te explicamos cómo:</p>
             </span>
             <img
               src="/cards.webp"
@@ -47,7 +47,7 @@ function App() {
         <section className="text-white px-6 flex flex-col gap-12 lg:px-20">
           <div>
             <h2 className="text-cream text-2xl font-regular lg:text-5xl">TIPOS DE CASILLAS</h2>
-            <pm className="lg:text-2xl">A lo largo del tablero encontrarás diferentes cuadrados con QR que activan diferentes eventos:</pm>
+            <p className="lg:text-2xl">A lo largo del tablero encontrarás diferentes cuadrados con QR que activan diferentes eventos:</p>
           </div>
 
           <BoxType />
