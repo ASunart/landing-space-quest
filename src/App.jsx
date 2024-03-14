@@ -56,13 +56,15 @@ function App() {
         <section className="flex flex-col justify-center lg:mt-36 items-center gap-4 px-6 lg:px-20">
           <div className="flex flex-col gap-12 justify-center md:flex-row">
             <img
-              src="/bento-image.webp"
+              src="/pruebas-1.webp"
               alt=""
-              className="w-80 rounded-lg lg:w-2/5" />
+              className="w-80 rounded-lg lg:w-2/5 object-cover"
+              loading="lazy" />
             <img 
             src="/bento-image.webp" 
             alt="" 
-            className="w-80 rounded-lg lg:w-2/5" />
+            className="w-80 rounded-lg lg:w-2/5"
+            loading="lazy" />
 
           </div>
           <h3 className="text-white border border-blue-100 p-6 rounded-lg bg-[rgba(255,255,255,0.1)] md:w-4/5 text-center md:text-2xl">¡Comienza tu aventura en Space Quest y descubre un mundo de aprendizaje y diversión!</h3>

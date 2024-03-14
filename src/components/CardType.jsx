@@ -9,7 +9,8 @@ export function CardType() {
                         <img
                             src={image}
                             alt={planet}
-                            className="w-36 lg:w-96" />
+                            className="w-36 lg:w-96"
+                            loading="lazy" />
                         <div>
                             <span className="flex flex-col">
                                 <h3 className={`text-xl ${color} lg:text-5xl`}>{planet}</h3>
