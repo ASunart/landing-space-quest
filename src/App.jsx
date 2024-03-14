@@ -7,7 +7,7 @@ import { TipCard } from "./components/TipCard"
 function App() {
 
   const mainBtn = "w-full px-8 py-2 bg-magenta rounded-lg lg:text-2xl lg:w-1/4 text-center"
-  const btnStyle = "w-full text-center px-8 py-2 bg-[rgba(255,255,255,0.1)] rounded-lg border border-[rgba(255,255,255,0.1)] lg:text-2xl lg:w-1/4"
+  const btnStyle = "w-full text-center px-8 py-2 bg-[rgba(255,255,255,0.1)] rounded-lg border border-[rgba(255,255,255,0.1)] lg:text-2xl lg:w-1/4 flex justify-center items-center gap-1"
 
   const h1Style = "text-[#698EBF] text-2xl font-regular lg:text-5xl"
   return (
@@ -22,7 +22,7 @@ function App() {
           </div>
           <div className="flex gap-4 w-full">
             <a className={mainBtn} href="https://spacequest.vercel.app/" target="_blank">Jugar ahora</a>
-            <a className={btnStyle} href="#" target="_blank">Ver video</a>
+            <a className={btnStyle} href="#" target="_blank"><img src="/video.svg" alt="Icono video" />Ver video</a>
           </div>
 
         </section>
