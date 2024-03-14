@@ -22,7 +22,7 @@ function App() {
           </div>
           <div className="flex gap-4 w-full">
             <a className={mainBtn} href="https://spacequest.vercel.app/" target="_blank">Jugar ahora</a>
-            <a className={btnStyle} href="#" target="_blank"><img src="/video.svg" alt="Icono video" />Ver video</a>
+            <a className={btnStyle} href="https://youtu.be/rNa1ysGfzAA" target="_blank"><img src="/video.svg" alt="Icono video" />Ver video</a>
           </div>
 
         </section>
